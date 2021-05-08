@@ -1,0 +1,9 @@
+
+//Shows an individual article 
+<h1><%= @article.title %></h1>
+<%= @article.content %>
+
+//Delete button
+<form method="post" action="/articles/<%= @article.id %>">
+  <input type="hidden" name="_method" value="delete" />
+  <input type="submit" />
